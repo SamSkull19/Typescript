@@ -1,0 +1,57 @@
+Initialization
+tsc --init          # Create tsconfig.json in current directory
+
+
+Compilation
+tsc                 # Compile using tsconfig.json
+tsc app.ts          # Compile a specific file
+tsc app.ts util.ts  # Compile multiple files
+tsc *.ts            # Compile all .ts files in current directory
+
+
+Watch Mode
+tsc --watch         # Auto-recompile on file changes (uses tsconfig.json)
+tsc -w              # Shorthand for --watch
+tsc app.ts --watch  # Watch a specific file
+
+
+Output Control
+tsc --outDir ./dist         # Output compiled files to a folder
+tsc --outFile bundle.js     # Bundle all output into one file
+tsc app.ts --outDir ./dist  # Compile specific file to a folder
+
+
+Type Checking (No Output)
+tsc --noEmit        # Check types only, don't generate JS files
+tsc --noEmit --watch  # Watch + type check only
+
+
+Targeting
+tsc --target ES6        # Compile to a specific JS version
+tsc --target ES2020
+tsc --module commonjs   # Set module system
+tsc --module ESNext
+
+
+Strict Mode
+tsc --strict        # Enable all strict type checks
+
+
+Info & Help
+tsc --version       # Show TypeScript version
+tsc -v              # Shorthand
+tsc --help          # Show all available options
+tsc -h              # Shorthand
+
+
+Project References
+tsc --build         # Build a project with references
+tsc -b              # Shorthand
+tsc -b --clean      # Delete build outputs
+tsc -b --force      # Force rebuild all projects
+
+
+Tip: Most of the time in real projects you'll mostly use just these three:
+tsc --init    # once at setup
+tsc -w        # during development
+tsc --noEmit  # for CI type checking
