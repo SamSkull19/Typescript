@@ -117,8 +117,8 @@ let profile = {
 };
 let users = {};
 console.log((_b = (_a = users.address) === null || _a === void 0 ? void 0 : _a.city) !== null && _b !== void 0 ? _b : 'Unknown');
-// Non-null assertion !
-let input = document.getElementById('name');
-console.log(input.id);
 export {};
+// Non-null assertion !
+// let input = document.getElementById('name');
+// console.log(input!.id); 
 //# sourceMappingURL=SomeConcepts.js.map

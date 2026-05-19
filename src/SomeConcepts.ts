@@ -192,5 +192,5 @@ let users : Users = {};
 console.log(users.address?.city ?? 'Unknown');
 
 // Non-null assertion !
-let input = document.getElementById('name');
-console.log(input!.id); 
+// let input = document.getElementById('name');
+// console.log(input!.id); 
